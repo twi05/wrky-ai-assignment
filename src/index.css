@@ -1,13 +1,376 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    font-family: 'DM Sans', sans-serif;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@500&display=swap');
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(90deg, #FFE4BC 0%, #FFD5CC 100%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    font-family: inter , sans-serif;
+}
+
+.center-nav ul li {
+    display: inline;
+    margin-left: 2rem;
+    line-height: 2rem;
+}
+
+#login {
+    border: none;
+    font-family: inherit;
+    background-color: transparent;
+}
+
+#signup {
+    border: none;
+    background-color: #6746F5;
+    padding: 0.5rem 2rem;
+    margin-left: 2rem;
+    color: white;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+
+/* MainComponent */
+
+.main-component {
+    min-height: 78vh;
+    /* background-color: red; */
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.left-component {
+    width: 50%;
+    margin: auto 0;
+}
+
+.left-component h2 {
+    font-size: 3.2rem;
+    font-weight: 900;
+    vertical-align: middle;
+    line-height: 3rem;
+    text-align: left;
+    display: inline;
+}
+
+.main-component-content {
+    color: #323232E5;
+    line-height: 21.6px;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.left-component-btn-div {
+    position: relative;
+}
+
+.left-component-btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    line-height: 21.6px;
+    border: none;
+    margin-top: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-getstarted {
+    background-color: black;
+    color: white;
+}
+
+.btn-behind {
+    background-color: #6746F5;
+    position: absolute;
+    left: 4px;
+    top: 5px;
+    z-index: -1;
+}
+
+.star-icon {
+    line-height: 3.2rem;
+    position: absolute;
+}
+
+
+.first-right-component {
+    min-height: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.second-right-component {
+    min-height: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.teamgoal {
+    height: 11rem;
+    width: 22rem;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 0.896774px solid #000000;
+    border-radius: 12px;
+}
+
+.girlimage {
+    height: 13rem;
+    width: 13rem;
+    background-image: linear-gradient(0deg, rgba(251, 173, 120, 0.29), rgba(251, 173, 120, 0.29));
+    border: 0.896774px solid #000000;
+    border-radius: 12px;
+    margin-left: 1rem;
+    /* object-position:bottom; */
+    /* offset-block-end:inherit; */
+}
+
+.image {
+    object-fit: cover;
+}
+
+.feedback {
+    height: 9.75rem;
+    width: 23rem;
+    background: transparent;
+    border: 0.896774px solid #000000;
+    border-radius: 12px;
+    justify-self: right;
+    margin-top: 1rem;
+}
+/* Extra small devices (phones, 600px and down) */
+
+.teamgoal-content {
+    padding: 2rem;
+}
+
+.teamgoal-content h3 {
+    display: inline;
+    margin-right: 1rem;
+    font-weight: 600;
+}
+
+.first-layer p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(81, 81, 81, 1);
+    line-height: 15px;
+}
+
+.btn-checkin {
+    background-color: #000000;
+    color: white;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 12px;
+    margin-left: 1rem;
+    font-weight: 600;
+}
+
+.graph-circle {
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.second-layer {
+    /* height: 5; */
+    width: 100%;
+}
+
+.team-img {
+    margin-top: 1rem;
+}
+
+.star-icon {
+    height: 2.8rem;
+}
+
+.girlimage {
+    position: relative;
+}
+
+.image {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.second-layer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress {
+    margin-top: 0.8rem;
+    text-align: end;
+}
+
+.progress span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.progress p {
+    color: rgba(81, 81, 81, 1);
+    font-weight: 500;
+}
+
+.btn-feedback {
+    margin: 2rem 0 0 0;
+}
+
+.feedback-content {
+    padding: 0.5rem;
+    display: flex;
+}
+
+.feedback-content-inside {
+    text-align: left;
+}
+
+.rightimg{
+        display: none;
+    }
+
+@media only screen and (max-width: 600px) {
+    .center-nav,
+    .button-nav {
+        display: none;
+    }
+    .left-component {
+        width: 100%;
+        text-align: center;
+        margin-top: 0rem;
+    }
+    .left-component-btn {
+        width: 80%;
+    }
+    .left-component h2 {
+        font-size: 2.2rem;
+        /* text-align: center !important; */
+    }
+    .main-component-content {
+        font-size: smaller;
+        margin-block-end: 0em;
+    }
+    .main-component {
+        flex-direction: column-reverse;
+        min-height: 78vh;
+    }
+    .first-right-component {
+        margin-top: 3rem;
+    }
+    .teamgoal-content {
+        padding: 0.3rem;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 768px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (max-width: 992px) {
+    .center-nav {
+        display: none;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (max-width: 1200px) {
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .main-component {
+        flex-direction: column-reverse;
+        overflow-x: hidden;
+    }
+    .first-right-component {
+        margin-top: 3rem;
+    }
+    .left-component {
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .left-component-btn-div {
+        width: 100%;
+    }
+    .btn-behind {
+        left: 12%;
+        /* top: 4%; */
+    }
+
+    .left-component-btn {
+        width: 80%;
+    }
+    .rightimg{
+        display: block;
+        width: 204%;
+    }
+    .first-right-component, .second-right-component{
+        display: none;
+    }
+    .rightimg img{
+        width: 49%;
+    }
+
+}
+
+.bargraph {
+    width: 8rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.rect {
+    width: 1.8rem;
+    height: 6rem;
+    margin-left: 0.5rem;
+    border: 0.964767px solid #000000;
+    border-radius: 6.7258px;
+}
+
+.rect1 {
+    height: 4.5rem;
+}
+
+.rect2 {
+    height: 6rem;
+    background-color: #6746F5;
+    ;
+}
+
+.rect3 {
+    height: 3.5rem;
+}
+
+.dropdown{
+    margin-left: 0.3rem;
+    cursor: pointer;
 }
